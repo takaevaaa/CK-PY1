@@ -1,2 +1,0 @@
-begin_with_char
-one_word_for_var
