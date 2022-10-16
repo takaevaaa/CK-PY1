@@ -1,0 +1,19 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    lambda_func_1 = lambda x1, x2: x2 + x1  # плохо присваивать lambda функции переменным
+    lambda_func_2 = lambda x1, x2: x2 * x1
+
+    print(lambda_func_1, lambda_func_2)  # обе функции выглядят одинаковыми по названию
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: img.png
+  visible: true
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

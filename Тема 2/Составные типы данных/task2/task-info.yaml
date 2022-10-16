@@ -1,0 +1,33 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 58
+    length: 23
+    placeholder_text: '# TODO напечатать имя последнего игрока'
+    initial_state:
+      length: 39
+      offset: 58
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: print(list_players[-1])
+  text: |
+    list_players = ["Маша", "Петя", "Саша", "Оля", "Кирилл"]
+
+    # TODO напечатать имя последнего игрока
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    Кирилл
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 16 Oct 2022 14:22:45 UTC
+record: -1

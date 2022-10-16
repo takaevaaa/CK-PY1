@@ -1,0 +1,51 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 28
+    placeholder_text: '# TODO импортировать Counter'
+    initial_state:
+      length: 28
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |
+      from collections import Counter
+  - offset: 581
+    length: 38
+    placeholder_text: '# TODO подсчитать и распечатать фрукты'
+    initial_state:
+      length: 38
+      offset: 581
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      counter_fruits = Counter(cart_fruits)
+      print(counter_fruits)
+  text: |
+    # TODO импортировать Counter
+
+    cart_fruits = [
+        'Яблоко', 'Банан', 'Апельсин', 'Яблоко', 'Яблоко', 'Яблоко', 'Банан', 'Апельсин', 'Банан', 'Банан',
+        'Банан', 'Яблоко', 'Банан', 'Апельсин', 'Банан', 'Апельсин', 'Яблоко', 'Апельсин', 'Банан', 'Банан',
+        'Банан', 'Яблоко', 'Апельсин', 'Банан', 'Апельсин', 'Апельсин', 'Апельсин', 'Банан', 'Яблоко', 'Апельсин',
+        'Банан', 'Яблоко', 'Банан', 'Банан', 'Банан', 'Апельсин', 'Банан', 'Банан', 'Яблоко', 'Банан', 'Яблоко',
+        'Апельсин', 'Яблоко', 'Апельсин', 'Яблоко', 'Апельсин', 'Апельсин', 'Яблоко', 'Апельсин', 'Яблоко'
+    ]
+
+    # TODO подсчитать и распечатать фрукты
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    Counter({'Банан': 19, 'Апельсин': 16, 'Яблоко': 15})
+  learner_created: false
+status: Unchecked
+record: -1

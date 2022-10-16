@@ -1,0 +1,33 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 35
+    placeholder_text: '# TODO записать словарь с описанием'
+    initial_state:
+      length: 35
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: |-
+      dict_ = {
+          "Имя": "Вася",
+          "Язык программирования": ["python", "java", "C++"],
+          "Стаж программирования": 22
+      }
+
+      print(dict_)
+  text: |
+    # TODO записать словарь с описанием
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sun, 16 Oct 2022 14:48:24 UTC
+record: -1
+post_submission_on_open: true

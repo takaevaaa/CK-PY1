@@ -1,0 +1,30 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 12
+    length: 53
+    placeholder_text: '...  # TODO поочередно подставьте значения True и False'
+    initial_state:
+      length: 55
+      offset: 12
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: "True"
+  text: |
+    condition = ...  # TODO поочередно подставьте значения True и False
+    if condition:
+        print("Условие истинно")
+    else:
+        print("Условие ложно")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Solved
+feedback:
+  time: Sun, 16 Oct 2022 15:12:57 UTC
+record: -1
+post_submission_on_open: true

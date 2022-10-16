@@ -1,0 +1,40 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 35
+    length: 45
+    placeholder_text: '...  # TODO перевести слова в верхний регистр'
+    initial_state:
+      length: 45
+      offset: 35
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: return [word.upper() for word in words]
+  text: |
+    def task(words: list) -> list:
+        ...  # TODO перевести слова в верхний регистр
+
+
+    list_words = [
+        "Goldenrod",
+        "Purple",
+        "Salmon",
+        "Turquoise",
+        "Cyan"
+    ]
+
+    print(task(list_words))
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    ['GOLDENROD', 'PURPLE', 'SALMON', 'TURQUOISE', 'CYAN']
+  learner_created: false
+status: Unchecked
+record: -1

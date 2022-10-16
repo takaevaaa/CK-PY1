@@ -1,0 +1,80 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 27
+    placeholder_text: '# TODO Вынести константу pi'
+    initial_state:
+      length: 27
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: PI = 3.14
+  - offset: 30
+    length: 195
+    placeholder_text: |-
+      # TODO убрать аргумент pi из функций и заменить его на константу из глобальной области видимости
+      def square_circle(r, pi):
+          return pi * r ** 2
+
+
+      def length_circle(r, pi):
+          return 2 * pi * r
+    initial_state:
+      length: 195
+      offset: 30
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      def square_circle(r):
+          return PI * r ** 2
+
+
+      def length_circle(r):
+          return 2 * PI * r
+  - offset: 255
+    length: 114
+    placeholder_text: |-
+      # TODO подправить передаваемые аргументы
+      square = square_circle(radius, 3.14)
+      length = length_circle(radius, 3.14)
+    initial_state:
+      length: 114
+      offset: 255
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      square = square_circle(radius)
+      length = length_circle(radius)
+  text: |
+    # TODO Вынести константу pi
+
+
+    # TODO убрать аргумент pi из функций и заменить его на константу из глобальной области видимости
+    def square_circle(r, pi):
+        return pi * r ** 2
+
+
+    def length_circle(r, pi):
+        return 2 * pi * r
+
+
+    radius = 8  # радиус круга
+    # TODO подправить передаваемые аргументы
+    square = square_circle(radius, 3.14)
+    length = length_circle(radius, 3.14)
+
+    print("Площадь равна =", square)
+    print("Длина окружности равна =", length)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

@@ -1,0 +1,29 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 106
+    length: 38
+    placeholder_text: '# TODO найти средний возраст студентов'
+    initial_state:
+      length: 38
+      offset: 106
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: print(sum(students_dict.values()) / len(students_dict))
+  text: "students_dict = {\n    'Саша': 27,\n    'Кирилл': 52, \n    'Маша': 14, \n\
+    \    'Петя': 36, \n    'Оля': 43, \n}\n\n# TODO найти средний возраст студенто\
+    в\n"
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    34.4
+  learner_created: false
+status: Unchecked
+record: -1

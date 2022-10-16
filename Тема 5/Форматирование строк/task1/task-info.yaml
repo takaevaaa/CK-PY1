@@ -1,0 +1,35 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 106
+    length: 43
+    placeholder_text: '# TODO распечатать с использованием f-строк'
+    initial_state:
+      length: 43
+      offset: 106
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      for name, grade in students_dict.items():
+          print(f"Студент {name} получил {grade} баллов")
+  text: "students_dict = {\n    'Саша': 27,\n    'Кирилл': 52, \n    'Маша': 14, \n\
+    \    'Петя': 36, \n    'Оля': 43, \n}\n\n# TODO распечатать с использованием f-с\
+    трок\n"
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    Студент Саша получил 27 баллов
+    Студент Кирилл получил 52 баллов
+    Студент Маша получил 14 баллов
+    Студент Петя получил 36 баллов
+    Студент Оля получил 43 баллов
+  learner_created: false
+status: Unchecked
+record: -1

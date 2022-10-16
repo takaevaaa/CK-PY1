@@ -1,0 +1,35 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 172
+    length: 56
+    placeholder_text: '...)  # TODO проверить наличие искомого фрукта в корзине'
+    initial_state:
+      length: 56
+      offset: 172
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: search_fruit in cart)
+  text: |
+    cart = {  # корзина с фруктами
+        "Яблоко": 23,
+        "Апельсин": 47,
+        "Банан": 10
+    }
+    search_fruit = "Персик"  # искомый фрукт
+
+    print("Персик есть в корзине с фруктами?", ...)  # TODO проверить наличие искомого фрукта в корзине
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    Персик есть в корзине с фруктами? False
+  learner_created: false
+status: Unchecked
+record: -1

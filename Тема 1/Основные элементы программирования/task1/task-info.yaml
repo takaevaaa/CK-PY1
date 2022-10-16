@@ -1,0 +1,16 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: |
+    a = 123  # помещаем в переменную a объект со значением 123
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: img.png
+  visible: false
+  learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

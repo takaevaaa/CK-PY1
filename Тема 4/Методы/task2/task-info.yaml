@@ -1,0 +1,50 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 29
+    length: 71
+    placeholder_text: '...  # TODO привести строку к единому регистру и избавиться
+      от пробелов'
+    initial_state:
+      length: 71
+      offset: 29
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: str_clear = ''.join(str_.lower().split())
+  - offset: 106
+    length: 35
+    placeholder_text: 'if ...:  # TODO проверка палиндрома'
+    initial_state:
+      length: 35
+      offset: 106
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: 'if str_clear == str_clear[::-1]:'
+  text: |
+    def is_palindrome(str_):
+        ...  # TODO привести строку к единому регистру и избавиться от пробелов
+
+        if ...:  # TODO проверка палиндрома
+            print("Строка палиндром")
+        else:
+            print("Строка не палиндром")
+
+
+    is_palindrome("Кит на море не романтик")
+    is_palindrome("Прочая строка")
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    Строка палиндром
+    Строка не палиндром
+  learner_created: false
+status: Unchecked
+record: -1

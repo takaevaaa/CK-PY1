@@ -1,0 +1,44 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 42
+    placeholder_text: '# TODO заполнить список случайными числами'
+    initial_state:
+      length: 42
+      offset: 0
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      from random import randint
+
+      start = -100
+      stop = 100
+      count = 20
+      list_numbers = [randint(start, stop) for _ in range(count)]
+  - offset: 44
+    length: 47
+    placeholder_text: '# TODO посчитать количество отрицательных чисел'
+    initial_state:
+      length: 47
+      offset: 44
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: |-
+      negative_numbers = [num for num in list_numbers if num < 0]
+      print(len(negative_numbers))
+  text: |
+    # TODO заполнить список случайными числами
+
+    # TODO посчитать количество отрицательных чисел
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true
