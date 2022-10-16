@@ -1,0 +1,24 @@
+type: theory
+files:
+- name: main.py
+  visible: true
+  text: "filename = \"input.txt\"\nwith open(filename) as f:  # open(filename, \"\
+    rt\") режим \"rt\" по умолчанию, его можно опустить\n    for line in f:  # фай\
+    л умеет построчно возвращать свое содержимое \n        print(line, end=\"\") \
+    \ # end=\"\", чтобы не задублировать символ переноса строки \\n\n"
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: input.txt
+  visible: true
+  text: |
+    1
+    2
+    3
+    line_4
+    [1, 2, 3]
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

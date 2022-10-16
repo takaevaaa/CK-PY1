@@ -1,0 +1,61 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 99
+    length: 64
+    placeholder_text: '...  # TODO поделить количество игроков пополам'
+    initial_state:
+      length: 47
+      offset: 99
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: len(list_players) // 2
+  - offset: 177
+    length: 62
+    placeholder_text: '...  # TODO взять левую половину списка'
+    initial_state:
+      length: 39
+      offset: 160
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list_players[:middle_index]
+  - offset: 253
+    length: 64
+    placeholder_text: '...  # TODO взять правую половину списка'
+    initial_state:
+      length: 40
+      offset: 213
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: list_players[middle_index:]
+  text: |
+    list_players = ["Маша", "Петя", "Саша", "Оля", "Кирилл", "Коля"]
+
+    # индекс середины
+    middle_index = ...  # TODO поделить количество игроков пополам
+
+    left_team = ...  # TODO взять левую половину списка
+    right_team = ...  # TODO взять правую половину списка
+
+    print(left_team)
+    print(right_team)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    ['Маша', 'Петя', 'Саша']
+    ['Оля', 'Кирилл', 'Коля']
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 16 Oct 2022 14:38:19 UTC
+record: -1

@@ -1,0 +1,30 @@
+type: output
+files:
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 11
+    length: 64
+    placeholder_text: '...  # TODO записать словарь десятичных и шестадцатиричных
+      чисел'
+    initial_state:
+      length: 64
+      offset: 11
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+    encrypted_possible_answer: '{num: hex(num) for num in range(16)}'
+  text: |
+    dict_hex = ...  # TODO записать словарь десятичных и шестадцатиричных чисел
+    print(dict_hex)
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+- name: tests/output.txt
+  visible: false
+  text: |
+    {0: '0x0', 1: '0x1', 2: '0x2', 3: '0x3', 4: '0x4', 5: '0x5', 6: '0x6', 7: '0x7', 8: '0x8', 9: '0x9', 10: '0xa', 11: '0xb', 12: '0xc', 13: '0xd', 14: '0xe', 15: '0xf'}
+  learner_created: false
+status: Unchecked
+record: -1
